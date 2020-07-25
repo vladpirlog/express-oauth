@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    script(src="https://kit.fontawesome.com/d9cfeed8e8.js" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet")
+  body
+    div.page-container
+      a(href='/')
+        div.title Express OAuth 2.0 Flow
+      block content
+    div.repo-info
+      a(href='https://github.com/vladpirlog/express-oauth' target="_blank")
+        button.repo-info-button= "vladpirlog/express-oauth  "
+          i(class="fab fa-github")
+    script(src="/javascripts/utils.js")

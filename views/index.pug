@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  if user
+    a(href=user.profileImage target="_blank")
+      img.user-picture(src=user.profileImage, alt="profile picture", height="200px")
+    div.user-email= "Your email is: "
+      b= user.email
+    br
+    div.user-email= "You have used the " + user.type + " OAuth flow."
+    form(action="/logout", method="post")
+      button.logout-button(type="submit") Logout
+  else
+    div.login-button-container
+      div.subtitle Pick the OAuth provider
+      div.separator
+      button#google-oauth.login-button.login-button-google Sign In with
+        b= " Google  "
+        i(class="fab fa-google")
+      button#github-oauth.login-button.login-button-github Sign In with
+        b= " GitHub  "
+        i(class="fab fa-github")
+      button#facebook-oauth.login-button.login-button-facebook(scope="public_profile,email") Sign In with
+        b= " Facebook  "
+        i(class="fab fa-facebook")
+      div.separator
+      div.footer We will only ask for basic account info.
