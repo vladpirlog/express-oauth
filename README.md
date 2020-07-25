@@ -32,7 +32,7 @@ An instance of the app will run be running at `http://localhost:3000/`.
 
 ### Environment variables
 
-A set of environment variables must be provided in a `.env` file.
+A set of environment variables must be provided in a `.env` file placed in the project's root folder.
 
 * PORT - port to run the application on; defaults to `3000`
 * NODE_ENV - NodeJS environment; defaults to `development`
