@@ -2,6 +2,8 @@
 
 A simple Express app which integrates OAuth authentication with Google, Github and Facebook.
 
+[![App Screenshot](https://res.cloudinary.com/dpcyf1brrl/image/upload/c_scale,w_960/v1595692652/screenshots/express-oauth_rnxdlb.png)](https://res.cloudinary.com/dpcyf1brrl/image/upload/c_scale,w_960/v1595692652/screenshots/express-oauth_rnxdlb.png)
+
 ## Getting Started
 
 First, the client IDs given by the OAuth providers must be hardcoded in
