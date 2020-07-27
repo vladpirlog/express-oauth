@@ -9,7 +9,7 @@ const router = express.Router()
 router.get('/google', async (req, res, next) => {
     try {
         /**
-         * If the has already granted access, then redirect to the homepage.
+         * If the user has already granted access, then redirect to the homepage.
          */
         if (res.locals.user) { return res.redirect('/') }
 
@@ -76,7 +76,7 @@ router.get('/google', async (req, res, next) => {
 router.get('/github', async (req, res, next) => {
     try {
         /**
-         * If the has already granted access, then redirect to the homepage.
+         * If the user has already granted access, then redirect to the homepage.
          */
         if (res.locals.user) { return res.redirect('/') }
 
@@ -142,7 +142,7 @@ router.get('/github', async (req, res, next) => {
 router.get('/facebook', async (req, res, next) => {
     try {
         /**
-         * If the has already granted access, then redirect to the homepage.
+         * If the user has already granted access, then redirect to the homepage.
          */
         if (res.locals.user) { return res.redirect('/') }
 
@@ -159,7 +159,7 @@ router.get('/facebook', async (req, res, next) => {
         }
 
         /**
-         * Get the GitHub endpoints.
+         * Get the Facebook endpoints.
          */
         const endpoints = getEndpoints.facebook()
 

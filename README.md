@@ -6,7 +6,7 @@ A simple Express app which integrates OAuth authentication with Google, Github a
 
 ## Getting Started
 
-First, the client IDs given by the OAuth providers must be hardcoded in
+First, the client IDs given by the OAuth providers must be hardcoded into
 the [public/javascripts/utils.js](public/javascripts/utils.js) file, because the requests made from the browser must include these IDs as a query parameter. On the other hand, **the client secrets must only be included as environment variables.**
 
 ### Clone and cd into this repository
@@ -49,6 +49,8 @@ A set of environment variables must be provided in a `.env` file placed in the p
 The user will be prompted to select one of the 3 ways of authentication. Upon giving permission to access basic account info, the user's email and profile image will be displayed on the homepage. These will be stored for a year as an encrypted JWT in a cookie.
 
 Feel free to revoke the access of the OAuth app in the Google/Github/Facebook account dashboard whenever you want.
+
+**The user's email and profile picture URL will not be stored anywhere else other than the `express_oauth` cookie.**
 
 ### Getting the OAuth credentials
 
